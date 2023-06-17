@@ -95,20 +95,22 @@ img{
 }
 
 .promo{
-  display: flex;
   width: 100%;
-  justify-content: center;
+  text-align: center;
 }
 
-span{
-  color: #089183;
+.promo-text{
+  margin-bottom: 10px;
 }
 
 .promo-btn{
+  width: auto;
   border: none;
   background: transparent;
-  width: 50px;
   cursor: pointer;
+  color: #089183;
+  font-size: 2em;
+  margin: 0 auto;
 }
 
 .page-btn{
@@ -130,6 +132,7 @@ span{
 
 .menu{
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
@@ -185,5 +188,20 @@ table td {
   padding: 25px 10px;
 }
 
+@media screen and (max-width: 1140px)  {
+  .wrapper{
+    width: 100%;
+  }
+}
 
+@media screen and (max-width: 768px)  {
+  .menu-items,
+  .content-about{
+    width: 100%;
+  }
+  .about-table{
+    margin: 30px auto;
+    width: 100%; 
+  }
+}
 
